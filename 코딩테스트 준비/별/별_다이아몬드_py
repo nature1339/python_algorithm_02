@@ -1,0 +1,12 @@
+for i in range(6):
+    for j in range(6-i):
+        print(' ', end ="")
+    for j in range(i*2+1): 
+        print('*', end="")    
+    print()
+for i in range(6, -1, -1): #0 1 2 3 4 5 #시작은 6줄부터
+    for j in range(6-i):# 6-6 = 0
+        print(' ', end="")     
+    for j in range(i*2+1):# 6*2+1 =13 12개별+0=13
+        print("*", end='')
+    print()
